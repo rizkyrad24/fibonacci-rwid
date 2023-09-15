@@ -1,3 +1,4 @@
+const _ = require("lodash")
 /**
  * Create an array filled by fibonacci sequence using loop way.
  *
@@ -5,6 +6,7 @@
  */
 function generateFibonacciUsingLoop(sequence) {
   // write your code here
+  sequence = _.toNumber(sequence)
   let array = [];
   if (sequence == 0) {
     array = [0];
@@ -30,6 +32,7 @@ function generateFibonacciUsingLoop(sequence) {
  */
 function generateFibonacciUsingRecursive(sequence) {
   // write your code here
+  sequence = _.toNumber(sequence)
   if (sequence <= 1) {
     return [0, 1];
   } else {
